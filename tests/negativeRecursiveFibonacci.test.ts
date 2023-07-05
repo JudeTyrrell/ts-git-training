@@ -5,7 +5,7 @@ describe('Negative Recursive Fibonacci Test', () => {
         const inputs = [-6, -5, -4, -3, -2, -1, 0]
         const expectedOutputs = [-8, 5, -3, 2, -1, 1, 0];
         for (let i = 0; i < expectedOutputs.length; i++) {
-            expect(computeFibonacciNumber(inputs[i], true)).toEqual(expectedOutputs[i]);
+            expect(computeFibonacciNumber(inputs[i], false, true)).toEqual(expectedOutputs[i]);
         }
     });
 })
