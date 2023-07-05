@@ -42,6 +42,7 @@ const negativeRecursiveFibonacci = (initialPosition: number, left: number = 0, r
         return negativeRecursiveFibonacci(initialPosition, right, left + right, currentPosition - 1);
     } else {
         return negativeRecursiveFibonacci(initialPosition, right - left, left, currentPosition + 1);
+    }
 }
   
 const computeNegativeFibonacci = (position: number): number => {
